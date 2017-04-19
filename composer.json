@@ -1,0 +1,24 @@
+{
+  "description": "Behat starter pack",
+  "keywords": [
+  ],
+  "license": "MIT",
+  "require": {
+  },
+  "require-dev": {
+    "behat/behat": "*",
+    "behat/mink": "*",
+    "behat/mink-extension": "*",
+    "behat/mink-goutte-driver": "*",
+    "behat/mink-selenium2-driver":  "~1.1",
+    "laracasts/behat-laravel-extension": "*"
+  },
+  "autoload": {
+  },
+  "scripts": {
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "stable"
+}

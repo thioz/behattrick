@@ -1,0 +1,17 @@
+phantomjs:
+  extensions:
+    Behat\MinkExtension\ServiceContainer\MinkExtension:
+      default_session: selenium2
+      goutte:
+        guzzle_parameters:
+          curl.options:
+            CURLOPT_SSL_VERIFYPEER: false
+            CURLOPT_CERTINFO: false
+            CURLOPT_TIMEOUT: 120
+          ssl.certificate_authority: false
+      selenium2:
+        wd_host: "http://localhost:4444/wd/hub"
+        capabilities:
+          browser: phantomjs
+      base_url: 'http://localhost'
+      browser_name: 'phantomjs'
